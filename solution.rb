@@ -3,16 +3,12 @@ require 'sinatra'
 enable :sessions
 
 get "/" do
-  request.accept
-  status 200
-  headers "Content-Type" => "text/html"
-  body "Si lo logramos!"
-
-  status 400
-  headers "Content-Type" => "text/html"
-  body "Sin Permiso"
-
-  #request.user_agent
+  if env['HTTP_PERMISO'] == "soy-un-token-secreto"
+    acceso = "Si lo logramos!"
+  else
+    acceso = "Sin Permiso"
+  end
+  acceso
 end
 
 get "/" do
