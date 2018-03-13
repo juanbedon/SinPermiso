@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <title>Instabook</title>
+  </head>
+  <body>
+   <div class="container">
+    <h1>Iniciar Sesión:</h1>
+      <div class="row">
+      <form class="col s12" action="/login" method="post">
+        <div class="row">
+
+          <!--<% if @closed_session %>
+          <div class="input-field col s12">
+            <p class="center-align">Sesión Cerrada</p>
+          </div>
+          <% end %>-->
+
+          
+          <!--<% simple_form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |formulario| %>
+            <%= formulario.text_field :name %>
+            <%= formulario.text_field :last_name %>
+            <%= formulario.submit "Iniciar Sesión"%>
+          <% end %>-->
+
+
+
+
+
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="user" type="text" class="validate" name="user" placeholder="User">
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate" name="email" placeholder="Email">
+          </div>
+          <br><br><br><br><br><br><br><br><br><br>
+          <div class="center-align">
+          <button class="btn waves-effect waves-light" type="submit">Iniciar Sesión</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>Instabook</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bienvenido:</h1>
+      <div class="row">
+        <div class="col s12">
+          <br>
+          <p class="center-align"><strong><%= "#{@user}" %> <br> <%= "#{@email}" %> </p></strong>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="center-align">
+        <a class="btn waves-effect waves-light" type="submit" href="/log_out">Cerrar Sesión</a>
+        </div>
+      </div>
+    </div>
+   </body>
+</html>
